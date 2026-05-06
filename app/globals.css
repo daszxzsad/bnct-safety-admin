@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=JetBrains+Mono:wght@400;700&display=swap');
+ 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ 
+html, body {
+  font-family: 'Noto Sans KR', system-ui, sans-serif;
+  background: #fafaf8;
+  color: #1a2332;
+}
+ 
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+ 
+/* 표 hover 효과 */
+.row-hover:hover { background: #f5f7fa; }
+ 
+/* 격자 배경 */
+.grid-bg {
+  background-image: linear-gradient(#e8e6df 1px, transparent 1px),
+                    linear-gradient(90deg, #e8e6df 1px, transparent 1px);
+  background-size: 40px 40px;
+}
